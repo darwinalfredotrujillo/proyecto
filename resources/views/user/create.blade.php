@@ -3,7 +3,7 @@
 
 @section('content')
 
-<form action="{{ url('/usuarios') }}" method="POST" enctype="multipart/form-data">
+<form action="{{ url('/user') }}" method="POST" enctype="multipart/form-data">
       {{ csrf_field() }}
     <center><h3>Crear un nuevo usuario</h3></center>
    <div class="form-group">
@@ -50,7 +50,7 @@
   <center><input class="btn btn-success" type="submit" value="Enviar"></center> 
   
 </form>
-<a href="{{ url('/usuarios') }}"><button class="btn btn-danger">Regresar</button></a>
+<a href="{{ url('/user') }}"><button class="btn btn-danger">Regresar</button></a>
 </div>
 
 @endsection
