@@ -1,3 +1,8 @@
+@extends('layout.master')
+@section('title', 'ROLES')
+
+@section('content')
+
 <form action="{{ url('/usuarios') }}" method="POST" enctype="multipart/form-data">
       {{ csrf_field() }}
     <center><h3>Crear un nuevo usuario</h3></center>
@@ -47,3 +52,5 @@
 </form>
 <a href="{{ url('/usuarios') }}"><button class="btn btn-danger">Regresar</button></a>
 </div>
+
+@endsection
